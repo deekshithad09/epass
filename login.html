@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link  href="{{ url_for('static',filename ='css/style.css') }}"  rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body >
+<center><img src="{{ url_for('static',filename ='images/gov.png') }}" height="25%" width="25%"></center>
+<center><h1>COVID-19 e Pass Application Govt. Of Telanagana</h1><br>
+  <p>Please fill down the details for the e-pass application.Kindly check all the details before you submit.</p>
+  <p>Note:A person can again apply after 3 days if the application is not approved.</p>
+  <div><h3>Applicant Details</h3></div>
+</center>
+
+<center><form method="post" action="/login_page">
+ 
+  <label>User First Name:  </label><input type="text" name="fname"  placeholder="" required>
+    
+
+    <label>User Last Name:  </label><input type="text" name="lname"  placeholder="" required>
+    <br><br>
+
+    <label>Email:  </label><input type="text" name="eid"  placeholder="" required>
+    <br><br>
+    <label>Source State:  </label><input type="text" name="source_st"  placeholder="" required>
+    
+    <label>Source District  </label><input type="text" name="source"  placeholder="" required>
+    <br><br>
+    <label>Destination State:  </label><input type="text" name="destination_st"  placeholder="" required>
+    
+    <label>Destination:  </label><input type="text" name="destination"  placeholder="" required>
+    <br><br>
+
+    <label>Phone Number </label><input type="text" name="phno"  placeholder="" required>
+    
+    <label>Id card: </label><input type="text" name="idcard"  placeholder="" required>
+    <br><br>
+  <label>Date : </label><input type="text" name="trip"  placeholder="" required>
+    <br><br>
+  <div><h3>Declaration</h3></div>
+  <p>I hereby declare that the above details are true to my knowledge.Also,I undertake that if anythig is found untrue I shall be liable for punishment or penalty as per law.</p>
+<input class="c" type="submit" value="submit">
+  <input class="c" type="reset" value="reset">
+</form></center>
+</body>
+</html>

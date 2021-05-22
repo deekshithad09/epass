@@ -1,0 +1,37 @@
+h1
+{
+color:navy;
+}
+label
+{
+color:ForestGreen;
+font-size:20px;
+}
+div
+{
+color:navy;
+}
+p
+{
+color:navy;
+font-size:25px;
+}
+input
+{
+font-size:25px;
+border: 2px solid red;
+  border-radius: 4px;
+}
+input[type=submit]
+{
+color:navy;
+}
+input[type=reset]
+{
+color:navy;
+}
+h2
+{
+color:ForestGreen;
+}
+
